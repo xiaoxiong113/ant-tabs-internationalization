@@ -13,10 +13,10 @@ const Login: React.FC = () => {
         <LoginCard />
       </Col>
     </Row>
-  );
-};
+  )
+}
 
-export default Login;
+export default Login
 // const { Tab, UserName, Password, Mobile, Captcha, Submit } = LoginFrom;
 // interface LoginProps {
 //   dispatch: Dispatch;

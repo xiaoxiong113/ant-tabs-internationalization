@@ -7,8 +7,8 @@ import styles from './UserLayout.less'
 
 export interface UserLayoutProps extends Partial<ConnectProps> {
   breadcrumbNameMap: {
-    [path: string]: MenuDataItem;
-  };
+    [path: string]: MenuDataItem
+  }
 }
 
 const UserLayout: React.FC<UserLayoutProps> = (props) => {
@@ -16,33 +16,31 @@ const UserLayout: React.FC<UserLayoutProps> = (props) => {
     route = {
       routes: [],
     },
-  } = props;
-  const { routes = [] } = route;
+  } = props
+  const { routes = [] } = route
   const {
     children,
     location = {
       pathname: '',
     },
-  } = props;
-  const { formatMessage } = useIntl();
-  const { breadcrumb } = getMenuData(routes);
+  } = props
+  const { formatMessage } = useIntl()
+  const { breadcrumb } = getMenuData(routes)
   const title = getPageTitle({
     pathname: location.pathname,
     formatMessage,
     breadcrumb,
     ...props,
-  });
+  })
   return (
     <HelmetProvider>
       <Helmet>
         <title>{title}</title>
         <meta name="description" content={title} />
       </Helmet>
-      <div className={styles.container}>
-        {children}
-      </div>
+      <div className={styles.container}>{children}</div>
     </HelmetProvider>
-  );
-};
+  )
+}
 
-export default connect(({ settings }: ConnectState) => ({ ...settings }))(UserLayout);
+export default connect(({ settings }: ConnectState) => ({ ...settings }))(UserLayout)

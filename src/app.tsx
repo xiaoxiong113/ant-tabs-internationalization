@@ -27,27 +27,27 @@ plugin.register({
       config: {
         onError: (error: any, dispatch: any) => {
           error.preventDefault()
-        }
-      }
-    }
+        },
+      },
+    },
   },
-  path: 'dva'
+  path: 'dva',
 })
 
-export function render (oldRender) {
+export function render(oldRender) {
   oldRender()
 }
 
 // 修改路由 https://umijs.org/zh-CN/docs/runtime-config#%E9%85%8D%E7%BD%AE%E6%96%B9%E5%BC%8F
-export function patchRoutes (props: any) {
+export function patchRoutes(props: any) {
   // console.log('patchRoutes', props)
 }
 
 // 在初始加载和路由切换时做一些事情
-export function onRouteChange (props: any) {
+export function onRouteChange(props: any) {
   // console.log('onRouteChangeonRouteChange', props)
 }
 
-export async function getInitialState () {
+export async function getInitialState() {
   return '测试数据'
 }
