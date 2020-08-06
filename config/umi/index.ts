@@ -3,7 +3,7 @@
  * @author: huxianghe
  * @lastEditors: huxianghe
  * @Date: 2020-05-13 16:03:08
- * @LastEditTime: 2020-08-06 15:07:42
+ * @LastEditTime: 2020-08-06 17:15:49
  */
 import path from 'path'
 import { defineConfig } from 'umi'
@@ -36,11 +36,11 @@ export default defineConfig({
   ignoreMomentLocale: true,
   // treeShaking: true,
   dva: { hmr: true, },
-  // locale: {
-  //   default: 'en-US',
-  //   antd: true,
-  //   baseNavigator: true,
-  // },
+  
+  locale: {
+    default: 'en-US',
+    
+  },
   dynamicImport: {
     loading: '@/components/PageLoading/index',
   },

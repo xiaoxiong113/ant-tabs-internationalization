@@ -57,7 +57,7 @@ export default {
   },
   locale: {
     default: 'en-US',
-    // antd: false,
+    antd: false,
     // title: false,
     // baseNavigator: true,
     // baseSeparator: '-',

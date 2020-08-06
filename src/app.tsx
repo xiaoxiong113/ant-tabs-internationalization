@@ -3,7 +3,7 @@
  * @author: huxianghe
  * @lastEditors: huxianghe
  * @Date: 2020-05-18 10:50:57
- * @LastEditTime: 2020-08-06 15:06:41
+ * @LastEditTime: 2020-08-06 16:50:15
  */
 // https://umijs.org/zh-CN/docs/runtime-config#rootcontainerlastrootcontainer-args
 // https://umijs.org/zh-CN/api#plugin
@@ -51,7 +51,3 @@ export function onRouteChange (props: any) {
 export async function getInitialState () {
   return '测试数据'
 }
-
-// export const locale = {
-//   default: 'en-US'
-// }
