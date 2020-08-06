@@ -1,0 +1,95 @@
+/*
+ * @description: 登录 Form 表单组件样式文件
+ * @author: huxianghe
+ * @lastEditors: huxianghe
+ * @Date: 2020-05-18 16:03:32
+ * @LastEditTime: 2020-07-29 14:09:29
+ */ 
+.login_form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .login_form_body {
+    margin-right: -20Px;
+    margin-top: 20Px;
+    flex: 1;
+    .login_title {
+      margin: 0;
+      padding: 10Px 0;
+      position: relative;
+      font-size:32Px;
+      font-family:PingFangSC-Semibold,PingFang SC;
+      font-weight:600;
+      color:rgba(51,51,51,1);
+      text-align: center;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1Px;
+        left: 0;
+        bottom: 0;
+        background-color:rgba(174,192,219,1);
+      }
+    }
+    .login_tips {
+      height:34Px;
+      margin: 20Px 0;
+      p {
+        margin: 0;
+        line-height: 34Px;
+        background:rgba(255,251,230,1);
+        text-align: center;
+        font-size:14px;
+        font-family:PingFangSC-Regular,PingFang SC;
+        font-weight:400;
+        color:rgba(245,34,45,1);
+      }
+    }
+    .login_form_wrapper {
+      .input {
+        width: 100%;
+        > div {
+          width: 100%;
+        }
+        :global {
+          .ant-input-affix-wrapper {
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid #E9E9E9;
+            padding: 20px 0;
+            box-shadow: none;
+          }
+        }
+      }
+      input {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .login_captcha {
+        cursor: pointer;
+        width: 70px;
+        height: 30px;
+      }
+    }
+  }
+  .login_form_footer {
+    height: 176Px;
+    background: url('../../../../assets/images/backgrounds/login/bg_login.png');
+    .login_submit {
+      width:360Px;
+      height:46Px;
+      background:rgba(250,180,0,1);
+      box-shadow:0px 2px 4px 0px rgba(255,241,205,1);
+      border-radius:23px;
+      font-size:16px;
+      font-family:PingFangSC-Medium,PingFang SC;
+      font-weight:500;
+      color:rgba(255,255,255,1);
+      margin-top: 10Px;
+      border: none;
+    }
+  }
+}

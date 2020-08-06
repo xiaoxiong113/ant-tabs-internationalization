@@ -1,0 +1,115 @@
+/*
+ * @description: TMS 图片多张图片上传样式
+ * @author: huxianghe
+ * @github: git@code.aliyun.com:WOHAOYUN/thematrix.git
+ * @lastEditors: huxianghe
+ * @Date: 2019-07-04 14:29:12
+ * @LastEditTime: 2020-07-02 18:22:48
+ * @Copyright: Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+// @import '~@assets/style/mixins'
+.upload_pic_container {
+  display: flex;
+  
+
+  .pic_item,
+  .rc-upload {
+  }
+
+  .pic_item {
+    position: relative;
+    margin-right: 10px;
+    // margin-bottom: 15px;
+    text-align: center;
+
+    .target_pic {
+      transition: all .3s;
+      position: absolute;
+      z-index: 999;
+      left: 100%;
+      bottom: 0;
+    }
+  }
+
+    .photo_wall_warapper {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .modal {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .5);
+        display: none;
+
+        .edit_pic,
+        .edit_del {
+          display: none;
+        }
+      }
+
+      &:hover {
+        .modal {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .edit_pic,
+          .edit_del {
+            cursor: pointer;
+            display: block;
+          }
+
+          .edit_pic {
+            margin: 0 15px;
+          }
+        }
+      }
+
+      .pic_button {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+        font-size: 10px;
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, .4);
+        display: flex;
+
+        >div {
+          flex: 1;
+          cursor: pointer;
+
+          &:hover {
+            // color: #31B17B;
+          }
+        }
+      }
+    }
+
+  .upload_placeholder {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+  }
+
+  .pic_wrapper {
+    width: 150px;
+    height: 100px;
+    background: rgba(250, 250, 250, 1);
+    border-radius: 5px;
+    border: 1px dashed rgba(217, 217, 217, 1);
+  }
+}

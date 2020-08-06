@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>分组 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.00158677686 0.022214876 15.3684893 0.022214876 15.3684893 15.9323504 0.00158677686 15.9323504"></polygon>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="志愿者管理-志愿者信息（个人）" transform="translate(-689.000000, -336.000000)">
+            <g id="编组-5" transform="translate(300.000000, 328.000000)">
+                <g id="编组-3" transform="translate(375.000000, 0.000000)">
+                    <g id="分组-2" transform="translate(14.000000, 8.000000)">
+                        <g id="分组">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M7.65040661,14.5105455 L1.35402314,14.5105455 L1.35402314,1.37623802 L8.25970248,1.37623802 L8.25970248,7.13100165 L14.0144661,7.13100165 L14.0144661,7.94340496 L15.3684893,7.94340496 L15.3684893,6.11538512 L9.27521322,0.022214876 L0,0.022214876 L0,15.9323504 L7.65040661,15.9323504 L7.65040661,14.5105455 Z M8.93678017,1.57934545 L13.8112529,6.45392397 L8.93678017,6.45392397 L8.93678017,1.57934545 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                        </g>
+                        <polygon id="Fill-3" fill="#FFFFFF" transform="translate(11.949474, 12.411782) scale(-1, 1) translate(-11.949474, -12.411782) " points="12.1186909 11.7347174 10.6969917 11.7347174 12.1186909 10.3130182 12.5926612 9.77139835 11.6448264 8.82356364 8.12427107 12.4117686 11.6448264 16 12.5926612 14.9845157 10.6969917 13.0887405 15.7746777 13.0887405 15.7746777 11.7347174"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

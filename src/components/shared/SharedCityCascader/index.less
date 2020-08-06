@@ -1,0 +1,21 @@
+/*
+ * @description: 城市级联选择组件样式文件
+ * @author: huxianghe
+ * @lastEditors: huxianghe
+ * @Date: 2020-05-25 13:45:38
+ * @LastEditTime: 2020-05-25 18:51:15
+ */ 
+.city_cascader_wrapper {
+  > div {
+    & + div {
+      margin-left: 8px;
+    }
+  }
+  :global {
+    .ant-select {
+      input {
+        width: 100%!important;
+      }
+    }
+  }
+}

@@ -1,0 +1,316 @@
+/*
+ * @description: 首页布局
+ * @author: huxianghe
+ * @lastEditors: huxianghe
+ * @Date: 2020-05-21 09:32:48
+ * @LastEditTime: 2020-08-06 11:51:48
+ */
+.mcds_layouts_container {
+  :global {
+    .ant-pro-sider-menu-logo {
+      // padding: 13px 0 0;
+      // padding: 0;
+      // height: 130Px;
+      text-align: center;
+      // background: url('../assets/images/backgrounds/menu_bg.png') 100% 100% no-repeat;
+
+      .logo {
+        .logo_img {
+          image {
+            width: 76px;
+            height: 48px;
+          }
+        }
+        .logo_info {
+          color: #fff;
+          font-weight: 600;
+          font-size: 20px;
+          letter-spacing: 1px;
+          margin-top: 6px;
+        }
+
+      }
+
+    }
+
+    .ant-layout-header {
+      line-height: unset;
+      height: 56Px;
+    }
+
+    .ant-layout-content {
+      margin: 0;
+      // padding: 20px;
+    }
+
+    .ant-breadcrumb {
+      a {
+        vertical-align: middle;
+        color: #333;
+      }
+    }
+
+    .ant-breadcrumb-separator {
+      vertical-align: middle;
+      color: #333;
+    }
+  }
+  
+  .trigger {
+    font-size: 26px;
+    line-height: 56Px;
+    // padding: 0 24px;
+    cursor: pointer;
+    transition: color .3s;
+    color: #fff;
+    &:hover {
+      color: #1890ff;
+    }
+  }
+  .mcd_header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 56PX;
+    padding: 0;
+    background: #fff;
+    .header_l {
+      width: 600px;
+      
+      height: 56Px;
+      
+      color: #454458;
+      :global {
+        .ant-tabs-nav-wrap {
+          
+          border: none;
+          button {
+            font-size: 14px;
+            font-weight: 600!important;
+          }
+        }
+        .ant-tabs-nav {
+          height: 56Px;
+          border: none;
+         
+        }
+        .ant-tabs-tab-active {
+          background-color: #F5F5FA;
+          color: #4E2B8F;
+          box-sizing: border-box;
+          border-top: 2px solid #4E2B8F;
+          border-radius: unset;
+          margin: 0!important;
+        }
+      }
+    }
+    .header_triger {
+      height: 64PX;
+      line-height: 64PX;
+      padding: 0 20PX;
+      font-size: 20px;
+
+      color: #fff !important;
+
+      &.collapsed {
+        background-color: #F6F6F6;
+      }
+    }
+
+    .header_triger:hover {
+      // background-color: #F6F6F6;
+    }
+
+    .back_arrow {
+      padding: 0 10px;
+      line-height: 64PX;
+      font-size: 14px;
+      color: #fff;
+      cursor: pointer;
+
+      svg {
+        display: inline-block;
+        vertical-align: text-bottom;
+        margin-bottom: 2Px;
+      }
+    }
+
+    // .back_arrow:hover {
+    //   background-color: #F6F6F6;
+    // }
+  }
+
+  &.collapsed {
+    :global {
+      .ant-pro-sider-menu-sider {
+        flex: 0 0 60px !important;
+        max-width: 60px !important;
+        min-width: 60px !important;
+        width: 60px !important;
+        box-shadow: none !important;
+      }
+
+      
+      .ant-menu-submenu-title {
+        padding: 0 14px !important;
+
+        >span {
+          display: inline-block;
+
+          svg {
+            margin-right: 0;
+            transition: font-size 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), margin 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+          }
+
+          span {
+            display: inline-block;
+            max-width: 0;
+            opacity: 0;
+            transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+          }
+        }
+      }
+    }
+    
+    .menu_title {
+      display: inline-block;
+
+      svg {
+        margin-right: 0;
+        transition: font-size 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), margin 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+
+      span {
+        display: inline-block;
+        max-width: 0;
+        opacity: 0;
+        transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+    }
+  }
+
+  &.un_collapsed {
+    :global {
+      .ant-pro-sider-menu-sider {
+        flex: 0 0 260px !important;
+        max-width: 260px !important;
+        min-width: 260px !important;
+        width: 260px !important;
+      }
+
+      .ant-menu-submenu-title {
+        >span {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+
+          svg {
+            margin-right: 5px;
+            transition: font-size 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), margin 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+          }
+
+          span {
+            transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+          }
+        }
+      }
+    }
+
+    .menu_title {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      svg {
+        margin-right: 5px;
+        transition: font-size 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), margin 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+
+      span {
+        transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+    }
+  }
+
+  .mcds_layouts_wrapper {
+    .mcds_layouts_breadcrumb_wrapper {
+      //
+    }
+
+    .mcds_layouts_content_wrapper {
+      // background-color: #fff;
+      // margin: 10px;
+      padding: 10px;
+    }
+  }
+  :global {
+    .ant-menu-item {
+      padding: 0 14px !important;
+      display: flex;
+      justify-content: center;
+      background-color: #2E1954;
+    }
+    .ant-menu-item-selected,.ant-menu-item-active {
+      background-color: #4E2B8F!important;
+    }
+  }
+  .mcds_breadcrumb {
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 20px;
+
+    .flota_level {
+      color: #333333;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+    }
+
+    .current_level {
+      font-size: 14px;
+      vertical-align: middle;
+      // color: #fff;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 500;
+    }
+
+    .cursor {
+      cursor: pointer;
+    }
+
+    .lasttitle {
+      color: #1F61AC;
+    }
+
+    svg {
+      display: inline-block;
+      vertical-align: text-bottom;
+      margin-right: 2PX;
+    }
+  }
+
+  .m_r_5 {
+    margin-right: 5px;
+  }
+}
+
+.sub {
+  margin-top: 0px !important;
+}
+
+.tabPanel {
+  margin: 0 0 16px -1px;
+  
+  // position: relative;
+  :global {
+    .ant-tabs-nav-wrap {
+      // height: 50px;
+      display: none!important;
+    }
+    .ant-tabs-nav-list {
+      position: absolute;
+      top: 0;
+      z-index: 10000;
+    }
+  }
+}

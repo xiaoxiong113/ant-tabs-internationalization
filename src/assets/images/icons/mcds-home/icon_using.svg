@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>形状@1x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="麦当劳叔叔之家" transform="translate(-1523.000000, -265.000000)" fill="#3DBB00" fill-rule="nonzero">
+            <g id="矩形" transform="translate(300.000000, 186.000000)">
+                <g id="编组" transform="translate(33.000000, 75.000000)">
+                    <path d="M1196,4 C1192.694,4 1190,6.694 1190,10 C1190,13.306 1192.694,16 1196,16 C1199.306,16 1202,13.306 1202,10 C1202,6.694 1199.306,4 1196,4 Z M1199.582,8.404 L1195.484,12.502 C1195.232,12.754 1194.83,12.754 1194.584,12.502 L1192.412,10.33 C1192.16,10.078 1192.16,9.676 1192.412,9.43 C1192.664,9.178 1193.06,9.184 1193.306,9.436 L1195.022,11.152 L1198.676,7.498 C1198.928,7.246 1199.33,7.246 1199.576,7.498 C1199.822,7.75 1199.834,8.152 1199.582,8.404 L1199.582,8.404 Z" id="形状"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

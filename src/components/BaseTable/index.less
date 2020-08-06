@@ -1,0 +1,40 @@
+/*
+ * @description: 表格组件样式文件
+ * @author: huxianghe
+ * @Date: 2020-05-24 13:44:06
+ * @lastEditors: huxianghe
+ * @LastEditTime: 2020-06-23 16:07:07
+ */
+.mcds_table_wrapper {
+  margin-top: 15px;
+  :global {
+    .table {
+      .ant-table-placeholder {
+        min-height: 450px;
+      }
+    }
+    .ant-table-thead {
+      height: 60px;
+     
+      .ant-table-cell {
+        font-weight: 600;
+        color:#333333FF;
+        font-size: 14px;
+      }
+      
+    }
+  }
+  .pagintion {
+    text-align: right;
+    margin: 1rem 0;
+  }
+  .select_row {
+    :global {
+      .ant-table-tbody {
+        > tr {
+          cursor: pointer
+        }
+      }
+    }
+  }
+}

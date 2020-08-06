@@ -1,0 +1,39 @@
+/*
+ * @description: 弹窗组价样式文件
+ * @author: huxianghe
+ * @lastEditors: huxianghe
+ * @Date: 2020-05-22 16:43:21
+ * @LastEditTime: 2020-05-29 17:55:54
+ */
+#mcds_base_modal {
+  .mcds_base_modal_wrapper {
+    :global {
+      .ant-modal-header {
+        padding: 16px 0;
+        text-align: center;
+        color: #333333;
+        background-color: #FAFAFA;
+        .ant-modal-title {
+          font-size: 16px;
+        }
+      }
+      .ant-modal-body {
+        padding: 30px;
+      }
+      .ant-modal-footer {
+        padding: 20px;
+      }
+    }
+    .modal_footer {
+      > div {
+        &:last-child {
+          margin-left: 20px;
+        }
+        button {
+          line-height: 1;
+          padding: 10px 40px;
+        }
+      }
+    }
+  }
+}

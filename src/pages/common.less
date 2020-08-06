@@ -1,0 +1,109 @@
+.mytable {
+  background-color: #EFF1F4FF;
+
+  .content {
+    padding: 20px;
+    background-color: #fff;
+    :global {
+     
+      .ant-table-cell {
+        font-size: 14px!important;
+      }
+      .ant-btn {
+        font-size: 14px!important;
+      }
+    }
+  }
+
+  :global {
+    .ant-tabs {
+      .ant-tabs-content {
+        // padding: 0px 20px;
+        .ant-tabs-tabpane {
+          padding: 0px 20px;
+          background: rgba(239, 241, 244, 1);
+        }
+      }
+
+      .ant-tabs-nav-container {
+        width: 100%;
+
+        .ant-tabs-nav {
+          height: 60px;
+          background: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .ant-tabs-tab {
+            width: 140px;
+            height: 40px;
+            padding: 0;
+            line-height: 38px;
+            text-align: center;
+            background: rgba(255, 255, 255, 1);
+            border: 1px solid rgba(128, 139, 158, 1);
+            border-radius: 0 !important;
+            margin-right: 50px !important;
+            font-size: 16px;
+          }
+
+          .ant-tabs-tab-active {
+            border: 1px solid rgba(31, 97, 172, 1);
+            border-bottom-color: rgba(31, 97, 172, 1) !important;
+            background: rgba(31, 97, 172, 1);
+            font-weight: 500;
+            color: rgba(255, 255, 255, 1);
+          }
+        }
+      }
+    }
+
+    .ant-btn-ghost {
+      font-weight: 600;
+      color: rgba(31, 97, 172, 1);
+      border: 1px solid rgba(31, 97, 172, 1);
+
+      img {
+        width: 15px;
+      }
+
+    }
+  }
+
+
+}
+
+.mytable > .ant-tabs-card > .ant-tabs-nav::before {
+  display: none!important;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // line-height: 25px;
+  margin-bottom: 30px;
+  .title_l {
+    color: #1F61AC;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    i {
+      display: inline-block;
+      width:5px;
+      height:17px;
+      background:rgba(31,97,172,1);
+      margin-right: 5px;
+    }
+  }
+  .title_r {
+    display: flex;
+    align-items: center;
+    i {
+      color: red;
+      margin-right: 5px;
+    }
+  }
+}
