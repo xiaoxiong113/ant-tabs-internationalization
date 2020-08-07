@@ -95,8 +95,7 @@ type TargetKey = string | MouseEvent<HTMLElement, MouseEvent>
 
 const menuDataRender = (menuList: MenuDataItemExtends[]): MenuDataItemExtends[] => {
   if (!isIncludeAuthority(1)) {
-    // const index = menuList.findIndex(item => item.name === '人员管理')
-    // menuList.splice(index, 1)
+  
   }
   const res = menuList.map((item) => {
     const { iconAlias } = item
@@ -265,7 +264,7 @@ const BasicLayout: React.FC<BasicLayoutProps> = (props) => {
               history.push('/layouts/home')
             }}
           >
-            {!collapsed ? <a style={{ color: '#fff' }}>聪算</a> : null}
+            {!collapsed ? <a style={{ color: '#fff' }}>logo</a> : null}
             <LegacyIcon
               className={styles.trigger}
               // type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
