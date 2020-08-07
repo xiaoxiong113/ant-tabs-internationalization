@@ -3,9 +3,10 @@
  * @author: songliubiao, huxianghe
  * @lastEditors: songliubiao
  * @Date: 2020-05-13 15:14:07
- * @LastEditTime: 2020-06-22 16:10:11
+ * @LastEditTime: 2020-08-07 14:38:07
  */
 import config from '@/apiorzConfig/orz'
+import { history, connect, useIntl, getLocale, getAllLocales } from 'umi'
 
 export { AtomList, hashasAuthority } from './Authorize'
 
@@ -44,54 +45,54 @@ export {
 
 //orz
 export function format(str, obj) {
-  if(!obj) {
-      return str
+  if (!obj) {
+    return str
   }
   return str.replace(/\{([^}]+)\}/g, (match, key) => obj[key])
 }
 
 
 export function getStorage() {
-  if(window.localStorage) {
-      return window.localStorage
+  if (window.localStorage) {
+    return window.localStorage
   }
   return {}
 }
 
 export function getTokenForStorage() {
   const storage = getStorage()
-  if(storage) {
-      return storage.getItem(config.accessTokenKey)
-  }else {
-      return false
+  if (storage) {
+    return storage.getItem(config.accessTokenKey)
+  } else {
+    return false
   }
 }
 
 export function setTokenForStorage(token) {
   const storage = getStorage()
-  if(storage) {
-      return storage.setItem(config.accessTokenKey, token)
-  }else {
-      return false
+  if (storage) {
+    return storage.setItem(config.accessTokenKey, token)
+  } else {
+    return false
   }
 }
 
 export function removeTokenForStorage() {
   const storage = getStorage()
-  if(storage) {
-      return storage.removeItem(config.accessTokenKey)
-  }else {
-      return false
+  if (storage) {
+    return storage.removeItem(config.accessTokenKey)
+  } else {
+    return false
   }
 }
 
 
 export function treeForEach(treeData, cb, parent) {
   treeData.forEach((data) => {
-      cb(data, parent)
-      if(data.children) {
-          treeForEach(data.children, cb, data)
-      }
+    cb(data, parent)
+    if (data.children) {
+      treeForEach(data.children, cb, data)
+    }
   })
 }
 
@@ -99,4 +100,10 @@ export function hasTokenForStorage() {
   const token = getTokenForStorage()
 
   return !!token
+}
+
+
+export function formatMessage(id: string) {
+  const intl = useIntl()
+  return intl.formatMessage({ id: id })
 }

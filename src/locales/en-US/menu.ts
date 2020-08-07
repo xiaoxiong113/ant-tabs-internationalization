@@ -1,5 +1,5 @@
 export default {
-  'test123':'home',
+  'test123': 'home',
   'menu.welcome': 'Welcome',
   'menu.base': 'Basic information',
   'menu.base.temp': 'Template field string',

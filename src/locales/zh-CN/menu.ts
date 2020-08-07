@@ -1,5 +1,5 @@
 export default {
-  'test123':'首页',
+  // 'dashboard':'首页',
   'menu.welcome': '欢迎',
   'menu.base': '基础信息',
   'menu.base.temp': '模板字段串',
@@ -13,7 +13,7 @@ export default {
   'menu.login': '登录',
   'menu.register': '注册',
   'menu.register.result': '注册结果',
-  'menu.dashboard': 'Dashboard',
+  'menu.dashboard': '首页',
   'menu.dashboard.analysis': '分析页',
   'menu.dashboard.monitor': '监控页',
   'menu.dashboard.workplace': '工作台',

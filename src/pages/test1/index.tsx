@@ -3,7 +3,7 @@
  * @author: huxianghe
  * @lastEditors: huxianghe
  * @Date: 2020-05-11 19:11:09
- * @LastEditTime: 2020-08-05 15:28:34
+ * @LastEditTime: 2020-08-06 18:26:12
  */
 import React, { useState, useEffect, FC } from 'react'
 import { history, connect } from 'umi'
@@ -13,14 +13,11 @@ import { $POST, MOMERY, Toast } from '@utils/index'
 
 import APIS from '@/Apis'
 
-
 import styles from './index.less'
 
 import { BaseProps, KeyValue } from 'typings/common'
 
 const { Option } = Select
-
-
 
 const MCDHome: FC<BaseProps> = (props) => {
   const { dispatch } = props
@@ -33,28 +30,20 @@ const MCDHome: FC<BaseProps> = (props) => {
 
   const isSelectedChinaFund = Number(searchId) === 1 // 是否选中中国麦基金角色
 
-  
-
- 
   useEffect(() => {
     dispatch({
       type: 'global/setBreadCrumb',
-      payload: [{ path: '/layouts/home', name: '首页', type: 'link' }]
+      payload: [{ path: '/layouts/home', name: '首页', type: 'link' }],
     })
-   
+    dispatch({
+      type: 'tabs/ChangeTabsEffect',
+      payload: { tabKey: '/layouts/test1', title: '测试1', params: '/layouts/test1' },
+    })
   }, [])
 
- 
-
-  
   const { sumFamily, sumVolunteer, sumDonor, sumAmount, sumGoods } = queryList
 
-  return (
-    <div className={styles.mcds_home}>
-      test
-      111111111111111
-    </div>
-  )
+  return <div className={styles.mcds_home}>test 111111111111111</div>
 }
 
 export default connect(({ global }: any) => ({ global }))(MCDHome)
